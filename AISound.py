@@ -6,6 +6,7 @@ Created on Mon Mar 28 12:31:39 2022
 """
 import librosa
 audio_data = '1MG.wav'
+#Reading the amplitude and sampling rate
 x , sr = librosa.load(audio_data)
 import IPython.display as ipd
 ipd.Audio(audio_data)
