@@ -7,7 +7,7 @@ Created on Mon Mar 28 12:31:39 2022
 from IPython import get_ipython
 get_ipython().magic('reset -sf')
 import librosa
-audio_data = '1MG.wav'
+audio_data = 'M.wav'
 #Reading the amplitude and sampling rate
 x , sr = librosa.load(audio_data)
 import IPython.display as ipd
@@ -39,3 +39,5 @@ print(mfccs.shape)
 #Displaying  the MFCCs:
 plt.figure(figsize=(15, 7))
 librosa.display.specshow(mfccs, sr=sr, x_axis='time')
+
+
