@@ -4,6 +4,8 @@ Created on Mon Mar 28 12:31:39 2022
 
 @author: sp7012
 """
+from IPython import get_ipython
+get_ipython().magic('reset -sf')
 import librosa
 audio_data = '1MG.wav'
 #Reading the amplitude and sampling rate
