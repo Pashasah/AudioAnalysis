@@ -28,10 +28,8 @@ def butter_lowpass_filter(data, cutoff, fs, order):
     y = lfilter(b, a, data)
     return y
 
-b,a=butter_lowpass(2000, sr, order=16)
+b,a=butter_lowpass(2500, sr, order=16)
 x=lfilter(b, a, x)
-
-
 
 import IPython.display as ipd
 ipd.Audio(audio_data)
